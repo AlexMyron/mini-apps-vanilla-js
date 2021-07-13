@@ -1,0 +1,96 @@
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.container--toDo {
+  background-color: cadetblue;
+}
+
+.toDo__wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input__button {
+  width: 20%;
+  height: 1.68em;
+
+  background-color: brown;
+  color: #fff;
+
+  font-size: 38px;
+
+  transition: all 250ms ease;
+
+  &:hover {
+    background-color: rgb(223, 63, 63);
+  }
+}
+
+.input {
+  padding: 5px;
+  height: 4em;
+  margin-bottom: 20px;
+  width: 80%;
+
+  background-color: darkslategrey;
+  color: #fff;
+}
+
+.toDo__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+  margin-bottom: 2px;
+
+  background-color: #fff;
+  color: #000000;
+}
+
+.top__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check {
+  padding-left: 2em;
+}
+
+.check__input {
+  appearance: none;
+  opacity: 0;
+}
+
+.check__input:checked + .checkbox {
+  background-color: brown;
+  // width: 0.8em;
+  // height: 0.8em;
+}
+
+.check__input:checked + .check {
+  text-decoration: line-through;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1.2em;
+  height: 1.2em;
+  transform: translateX(-1.7em);
+
+  transition: all 250ms ease;
+
+  -webkit-box-shadow: 0px 0px 2px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 2px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 2px 3px rgba(34, 60, 80, 0.2);
+  // top: 50%;
+}
