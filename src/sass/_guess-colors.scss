@@ -1,0 +1,66 @@
+.container-guess {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.title-guess {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.rgb-guess {
+  text-transform: uppercase;
+
+  font-size: 38px;
+}
+
+.colors-set {
+  background-color: transparent;
+
+  color: darkcyan;
+  text-transform: uppercase;
+
+  transition: all 250ms ease;
+
+  &:hover,
+  &:focus {
+    background-color: darkturquoise;
+    color: white;
+  }
+}
+
+.header-guess {
+  margin: 0 auto;
+  background-color: darkturquoise;
+
+  text-align: center;
+  color: white;
+}
+
+.colors-wrapper-guess {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 10px;
+
+  background-color: darksalmon;
+}
+
+.colors-item-guess {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.result {
+  color: darkcyan;
+
+  text-transform: uppercase;
+}
+
+.guess-info {
+  display: flex;
+  justify-content: space-around;
+}
